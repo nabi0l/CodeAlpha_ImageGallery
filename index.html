@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1>Image Gallery</h1>
+      <div class="galler-container">
+        <div class="gallery-1">
+          <img
+            src="image/Cajun Sausage and Rice Skillet (One-Pan Dinner in 30 minutes!) (1).jpg"
+            alt="Image 1"
+          />
+          <img src="image/photo_2024-08-30_03-40-19.jpg" alt="Image 2" />
+          <img src="image/Haitian Spaghetti.jpg" alt="Image 3" />
+          <img src="image/pc bg.jpg" alt="Image 4" />
+          <img src="image/pc bg2.jpg" alt="Image 5" />
+          <img src="image/pc bg3.jpg" alt="Image 6" />
+        </div>
+
+        <div class="gallery-2">
+          <img src="image/photo_2024-08-30_03-40-19.jpg" alt="Image 7" />
+          <img src="image/Haitian Spaghetti.jpg" alt="Image 8" />
+          <img
+            src="image/Cajun Sausage and Rice Skillet (One-Pan Dinner in 30 minutes!) (1).jpg"
+            alt="Image 9"
+          />
+          <img src="image/pc bg3.jpg" alt="Image 12" />
+          <img src="image/pc bg.jpg" alt="Image 10" />
+          <img src="image/pc bg2.jpg" alt="Image 11" />
+        </div>
+
+        <div id="overlay"></div>
+
+        <div class="image-details" id="imageDetails">
+            <h2>Image Details</h2>
+            <img id="detailImage" src="" alt="" />
+            <p><strong>Name:</strong> <span id="imgName"></span></p>
+            <p><strong>Width:</strong> <span id="imgWidth"></span> px</p>
+            <p><strong>Height:</strong> <span id="imgHeight"></span> px</p>
+            <p><strong>Size:</strong> <span id="imgSize"></span> KB</p>
+            <button onclick="closeModal()">Close</button>
+          </div>
+          
+        <div class="controls">
+          <button onclick="previousImage()">Previous</button>
+          <button onclick="nextImage()">Next</button>
+        </div>
+
+       
+
+        <div class="caption">
+          <p id="counter">Image 1 of 6</p>
+
+        </div>
+      </div>
+
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
